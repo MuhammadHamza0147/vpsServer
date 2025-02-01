@@ -15,7 +15,7 @@
                 </div>
                 <div class="row m-t-25">
                     <div class="col-12 card p-4 mb-4">
-                        <h3 class="font-weight-bold"><span class="points">1,441</span> Points</h3>
+                        <h3 class="font-weight-bold"><span class="points">0</span> Balance</h3>
                         <a href="{{url('credit')}}" class="text-primary">View balance detail</a>
 
                         <div class="row mt-3">
