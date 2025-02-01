@@ -16,11 +16,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/' , [PageController::class , 'register'])->name('register');
 Route::get('/login' , [PageController::class , 'login'])->name('login');
+Route::get('/profile' , [PageController::class , 'profile'])->name('profile');
 Route::get('/forget/password' , [PageController::class , 'forgetPassword'])->name('forget.password');
 Route::get('/dashboard' , [PageController::class , 'dashboard'])->name('dashboard');
 Route::get('/servers' , [PageController::class , 'server'])->name('server');
 Route::get('/server/detail/{id}' , [PageController::class , 'serverDetail'])->name('server.detail');
 Route::get('/server/template' , [PageController::class , 'serverTemplate'])->name('template');
+Route::get('/server/activities' , [PageController::class , 'ServerActivities'])->name('activities');
 Route::get('/server/os' , [PageController::class , 'serverOperatingSystem'])->name('operating.system');
 Route::get('/regions' , [PageController::class , 'region'])->name('region');
 Route::get('/credit' , [PageController::class , 'credit'])->name('credit');

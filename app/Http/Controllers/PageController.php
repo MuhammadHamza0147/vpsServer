@@ -18,6 +18,10 @@ class PageController extends Controller
         return view('pages.auth.forget-password');
     }
 
+    public function profile(){
+        return view('pages.profile');
+    }
+
     public function dashboard(){
         return view('pages.index');
     }
@@ -27,6 +31,10 @@ class PageController extends Controller
     
     public function serverDetail($id){
         return view('pages.server-detail' , compact('id'));
+    }
+    
+    public function ServerActivities(){
+        return view('pages.server-activity');
     }
 
     public function serverTemplate(){

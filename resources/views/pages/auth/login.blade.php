@@ -6,6 +6,8 @@
     <title>Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{asset('asset/css/theme.css')}}">
+    @include('component.script')
     <style>
         body {
             background-color: #f9fafb;
@@ -133,7 +135,7 @@
     const password = document.getElementById('password').value.trim();
 
     if (!email || !password) {
-        alert('Please fill in all fields.');
+        showAlert('Please fill in all fields.' , 'error');
         return;
     }
 
@@ -160,14 +162,14 @@
             // Store session data
             localStorage.setItem('user', JSON.stringify(data));
             localStorage.setItem('token', data.sessionToken);
-            alert('Login Successfully!');
+            showAlert('Login Successfully!' , 'success');
             window.location.href = '/dashboard';
         } else {
             throw new Error('Invalid response from server.');
         }
     })
     .catch(err => {
-        alert('Error logging in: ' + err.message);
+        showAlert('Error logging in: ' + err.message , 'error');
     });
 });
 

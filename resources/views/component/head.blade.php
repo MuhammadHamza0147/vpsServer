@@ -40,4 +40,25 @@
     #Profile .title{
         font-weight: 500;
     }
+
+    .brand-logo{
+        font-size: 18px;
+        font-weight: 500;
+        color: #000
+    }
+
+    .brand-logo span{
+        color: #4272d7;
+    }
+
+    @media screen and (max-width:1024px){
+        .account-dropdown{
+            left: -10px;
+        }
+
+        .account-dropdown:after{
+            left: 50px;
+            right: 0;
+        }
+    }
 </style>

@@ -66,17 +66,19 @@
                                 <img src="{{asset('asset/images/icon/avatar-01.jpg')}}" alt="John Doe" />
                             </div>
                             <div class="content">
-                                <a class="js-acc-btn name" href="#">john doe</a>
+                                <a class="js-acc-btn name" href="{{url('profile')}}"></a>
                             </div>
                             <div class="account-dropdown js-dropdown">
                                 <div class="info clearfix">
                                     <div class="image">
-                                        <a href="#">
+                                        <a href="{{url('profile')}}">
                                             <img src="{{asset('asset/images/icon/avatar-01.jpg')}}" alt="John Doe" />
                                         </a>
                                     </div>
                                     <div class="content">
-                                        <span class="email email_address"></span>
+                                        <a href="{{url('profile')}}">
+                                            <span class="email email_address"></span>
+                                        </a>
                                     </div>
                                 </div>
                                 
