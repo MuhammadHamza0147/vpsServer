@@ -10,7 +10,7 @@
                     <div class="col-md-12">
                         <div class="overview-wrap">
                             <h2 class="title-1">Servers</h2>
-                            <button class="au-btn au-btn-icon au-btn--green au-btn--small" data-toggle="modal" data-target="#AddServer">Lunch Server</button>
+                            <button class="au-btn au-btn-icon au-btn--green au-btn--small" data-toggle="modal" data-target="#AddServer">Launch Server</button>
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                         </div>
 
                         <div class="col-12 text-right">
-                            <button type="button" class="au-btn au-btn-icon au-btn--green au-btn--small" id="lunchServer" onclick="LunchServe()">Lunch Server</button>
+                            <button type="button" class="au-btn au-btn-icon au-btn--green au-btn--small" id="launchServer" onclick="LaunchServe()">Launch Server</button>
                         </div>
                     </div>
                     
@@ -193,7 +193,7 @@
     fetchDataAndPopulateDropdowns();
     
     // Lunch Server API Call
-    async function LunchServe() {
+    async function LaunchServe() {
         const template = document.getElementById("template").value;
         const serverOs = document.getElementById("server_os").value;
         const region = document.getElementById("region").value;

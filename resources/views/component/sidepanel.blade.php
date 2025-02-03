@@ -1,6 +1,6 @@
-<aside class="menu-sidebar d-none d-lg-block">
+<aside class="menu-sidebar d-none d-lg-block" style="background: #212b37;">
     <div class="logo">
-        <a href="{{url('/dashboard')}}" class="brand-logo">
+        <a href="{{url('/dashboard')}}" class="brand-logo text-white">
             ready<span>R5</span>Server
         </a>
     </div>
@@ -38,7 +38,7 @@
                 
                 <li class="{{ request()->is('server/os') ? 'active' : '' }}">
                     <a href="{{url('server/os')}}">
-                        <span style="font-size: 25px">&#9863;</span>
+                        <span style="font-size: 23px">&#9863;</span>
                         Operating System
                     </a>
                 </li>
