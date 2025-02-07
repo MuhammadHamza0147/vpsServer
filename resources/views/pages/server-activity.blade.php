@@ -17,9 +17,9 @@
                 <div class="row m-t-30">
                     <div class="col-md-12">
                         <!-- DATA TABLE-->
-                        <div class="table-responsive m-b-40">
-                            <table class="table table-borderless table-data3 table-act">
-                                <thead>
+                        <div class="table-responsive m-b-40 ">
+                            <table class="table table-striped table-data3 table-act " Style="table-layout: fixed " >
+                                <thead class="">
                                     <tr>
                                         <th>ID</th>
                                         <th>Server ID</th>
@@ -32,6 +32,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+
                                 </tbody>
                             </table>
                         </div>
@@ -72,9 +73,9 @@
         tableBody.innerHTML = "";
         data.forEach((item, index) => {
             const row = `
-                <tr>
-                    <td>${item.id ?? '-'}</td>
-                    <td>${item.serverId ?? '-'}</td>
+                <tr class="bg-primary text-white">
+                    <td >${item.id ?? '-'}</td>
+                    <td >${item.serverId ?? '-'}</td>
                     <td>${item.userId ?? '-'}</td>
                     <td class="text-uppercase">${item.type ?? '-'}</td>
                     <td class="text-uppercase">${item.status ?? '-'}</td>

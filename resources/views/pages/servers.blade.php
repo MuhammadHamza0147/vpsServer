@@ -10,7 +10,7 @@
                         <div class="col-md-12">
                             <div class="overview-wrap">
                                 <h2 class="title-1">Servers</h2>
-                                <button class="au-btn au-btn-icon au-btn--green au-btn--small" data-toggle="modal" data-target="#AddServer">
+                                <button class="launchbtn" data-toggle="modal" data-target="#AddServer">
                                     Launch Server
                                 </button>
                             </div>
@@ -20,7 +20,7 @@
 
                     <div class="row m-t-30">
                         <div class="col-md-6">
-                            <p>Server Lunch Eligibility</p>
+                            <p>Server Launch Eligibility</p>
                         </div>
 
                         <div class="col-md-6 text-right">
@@ -363,14 +363,14 @@
                 <td>${server.vpsId}</td>
                 <td>${server.userId}</td>
                 <td>${server.name}</td>
-                <td class="text-uppercase">${server.status}</td>
+                <td class="text-uppercase"><div class="button">${server.status}</div></td>
                 <td class="text-uppercase">${server.ableToStop}</td>
                 <td class="text-uppercase">${server.ableToPowerOff}</td>
                 <td class="text-uppercase">${server.ableToStart}</td>
                 <td class="text-uppercase">${server.ableToReboot}</td>
                 <td class="text-uppercase">${server.ableToTerminate}</td>
                 <td class="text-uppercase">${server.vpsInstance || '-'}</td>
-                <td><button class="manipulate-btn text-capitalize au-btn au-btn-icon au-btn--cornflowerblue au-btn--small" data-toggle="modal" data-target="#manipulate-server" data-id="${server.id}">Manipulate</button></td>
+                <td><button class="manipulate-btn text-capitalize" data-toggle="modal" data-target="#manipulate-server" data-id="${server.id}">Manipulate</button></td>
                 <td><a href="${path}/server/detail/${server.id}" class="btn btn-info btn-sm">Detail</a></td>
             `;
 
