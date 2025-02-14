@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <title>Responsive Auth UI</title> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{asset('asset/css/theme.css')}}">
     <style>
-        body {
+         body {
             background-color: #f9fafb;
         }
         .auth-container {
@@ -50,6 +50,13 @@
             min-width: 80px;  /* Set a minimum width */
             border-radius: 10px; /* Keep rounded shape but smaller */
         }
+        @media (max-width:565px){
+            .auth-container h2{
+                font-size : 24.57px !important
+                
+            }
+        }
+      
 
     </style>
     <script>
@@ -62,19 +69,19 @@
     <div class="d-flex min-vh-100 justify-content-center align-items-center">
         <div class="auth-container">
         <div class="d-flex align-items-center mb-4">
-    <!-- Back Button -->
-    <button class="btn p-0 me-2 rounded-circle" onclick="window.history.back()" style="border: none; background: transparent;">
-        <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 16 16">
+        <!-- Back Button
+        <button class="btn p-0 me-2 rounded-circle" onclick="window.history.back()" style="border: none; background: transparent;">
+        <svg class="custom-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 16 16"> -->
             <!-- Outer Circle -->
-            <path class="circle" fill="white" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0"/>
+            <!-- <path class="circle" fill="white" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0"/> -->
             <!-- Inner Arrow -->
-            <path class="arrow" fill="black" d="M11.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+            <!-- <path class="arrow" fill="black" d="M11.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
         </svg>
-    </button>
+        </button> -->
 
-    <!-- Heading -->
-    <h2 class="m-0" style="font-size: 32px">Welcome to Ready Server</h2>
-</div>
+        <!-- Heading -->
+        <h2 class="m-0">Welcome to Ready Server</h2>
+    </div>
 
             
             <div class="gap-2 mb-3">

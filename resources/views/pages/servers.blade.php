@@ -10,7 +10,7 @@
                         <div class="col-md-12">
                             <div class="overview-wrap">
                                 <h2 class="title-1">Servers</h2>
-                                <button class="launchbtn" data-toggle="modal" data-target="#AddServer">
+                                <button class="launchbtn mb-sm-0 mb-3" data-toggle="modal" data-target="#AddServer">
                                     Launch Server
                                 </button>
                             </div>
@@ -19,11 +19,11 @@
                     </div>
 
                     <div class="row m-t-30">
-                        <div class="col-md-6">
+                        <div class="col-9">
                             <p>Server Launch Eligibility</p>
                         </div>
 
-                        <div class="col-md-6 text-right">
+                        <div class="col-3 text-right">
                             <label class="switch switch-text switch-success switch-pill">
                                 <input type="checkbox" class="switch-input" disabled>
                                 <span data-on="On" data-off="Off" class="switch-label"></span>
@@ -101,7 +101,7 @@
                                     placeholder="Enter Server Name" required>
                             </div>
 
-                            <div class="col-12 text-right">
+                            <div class="col-12 mt-2 text-right">
                                 <button type="button" class="au-btn au-btn-icon au-btn--green au-btn--small"
                                     id="launchServer" onclick="LaunchServe()">Launch Server</button>
                             </div>
@@ -260,9 +260,9 @@
             myHeadersPost.append("Authorization", `Bearer ${token}`);
 
             const raw = JSON.stringify({
-                "os": serverOs,
-                "region": region,
-                "template": template,
+                "operatingSystemId": serverOs,
+                "regionId": region,
+                "serverTemplateId": template,
                 "name": serverName
             });
 

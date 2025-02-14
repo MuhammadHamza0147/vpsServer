@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{asset('asset/css/theme.css')}}">
     @include('component.script')
     <style>
@@ -15,7 +14,7 @@
         .auth-container {
             max-width: 700px;
             margin: auto;
-            padding: 50px;
+            padding: 30px;
             background: whitealiceblue;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);

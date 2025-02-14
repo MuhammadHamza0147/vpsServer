@@ -830,6 +830,18 @@ section {
     .au-input--xl {
         min-width: 150px;
     }
+
+    .title-1{
+        font-size: 22px;
+    }
+
+    .table-data3 thead tr th{
+        font-size: 13px !important;
+    }
+
+    .table-data3 tbody td{
+        font-size: 11px !important;
+    }
 }
 
 .au-btn--submit {
@@ -1277,7 +1289,7 @@ section {
         position: relative;
         top: 0;
         left: 0;
-        height: 170px;
+        height: 120px;
     }
 }
 
@@ -1324,7 +1336,7 @@ section {
 }
 
 @media (max-width: 991px) {
-    .header-wrap {
+    /* .header-wrap {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -webkit-flex-direction: column;
@@ -1332,7 +1344,7 @@ section {
         -moz-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-    }
+    } */
 
     .header-wrap .mess-dropdown {
         left: 0;
@@ -1362,17 +1374,18 @@ section {
     -moz-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    justify-content: end;
 }
 
 @media (max-width: 991px) {
     .header-button {
-        margin-top: 30px;
+        /* margin-top: 30px; */
         width: 100%;
         -webkit-box-pack: justify;
         -webkit-justify-content: space-between;
         -moz-box-pack: justify;
         -ms-flex-pack: justify;
-        justify-content: space-between;
+        justify-content: end;
     }
 }
 

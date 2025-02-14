@@ -18,7 +18,7 @@
                     <div class="col-md-12">
                         <!-- DATA TABLE-->
                         <div class="table-responsive m-b-40 ">
-                            <table class="table table-striped table-data3 table-act " Style="table-layout: fixed " >
+                            <table class="table table-striped table-data3 table-act ">
                                 <thead class="">
                                     <tr>
                                         <th>ID</th>
@@ -31,9 +31,7 @@
                                         <th>Created At</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-
-                                </tbody>
+                                <tbody></tbody>
                             </table>
                         </div>
                     </div>
